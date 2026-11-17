@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SharePoint → Neo4j Sync Pipeline Architecture</title>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; max-width: 1400px; margin: 0 auto; padding: 20px; background: #fafafa; }
+        h1 { color: #1a1a2e; border-bottom: 3px solid #4f46e5; padding-bottom: 10px; }
+        h2 { color: #374151; margin-top: 40px; }
+        .card { background: white; border-radius: 12px; padding: 24px; margin: 20px 0; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border: 1px solid #e5e7eb; }
+        .card h3 { margin-top: 0; color: #4f46e5; }
+        .flow { display: flex; flex-wrap: wrap; gap: 16px; margin: 20px 0; }
+        .step { flex: 1; min-width: 280px; background: white; border-radius: 10px; padding: 20px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #4f46e5; }
+        .step-number { background: #4f46e5; color: white; width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; margin-bottom: 12px; }
+        .step h4 { margin: 0 0 12px; color: #1f2937; }
+        .step ul { margin: 0; padding-left: 20px; color: #4b5563; }
+        .step li { margin: 6px 0; }
+        table { width: 100%; border-collapse: collapse; margin: 16px 0; }
+        th, td { padding: 12px; text-align: left; border-bottom: 1px solid #e5e7eb; }
+        th { background: #f9fafb; font-weight: 600; color: #374151; }
+        code { background: #f3f4f6; padding: 2px 6px; border-radius: 4px; font-family: 'Monaco', 'Consolas', monospace; }
+        pre { background: #1e1e1e; color: #d4d4d4; padding: 16px; border-radius: 8px; overflow-x: auto; }
+        .mermaid { background: white; padding: 20px; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+        .badge { display: inline-block; padding: 4px 10px; border-radius: 20px; font-size: 12px; font-weight: 600; margin: 2px; }
+        .badge-blue { background: #dbeafe; color: #1e40af; }
+        .badge-green { background: #dcfce7; color: #166534; }
+        .badge-orange { background: #ffedd5; color: #9a3412; }
+        .badge-pink { background: #fce7f3; color: #9d174d; }
+        .legend { display: flex; gap: 16px; flex-wrap: wrap; margin: 20px 0; }
+    </style>
+</head>
+<body>
+    <h1>📊 SharePoint → Neo4j Data Sync Pipeline</h1>
+    <p style="color: #6b7280; font-size: 1.1rem;">Automated document metadata synchronization from SharePoint to Neo4j Knowledge Graph</p>
+
+    <div class="legend">
+        <span class="badge badge-blue">Source</span>
+        <span class="badge badge-orange">Processing</span>
+        <span class="badge badge-green">Storage</span>
+        <span class="badge badge-pink">Output</span>
+    </div>
+
+    <h2>🏗️ Architecture Overview</h2>
+
+    <div class="mermaid">
+flowchart TD
+    %% Styles
+    classDef source fill:#dbeafe,stroke:#1e40af,stroke-width:2px
+    classDef process fill:#ffedd5,stroke:#9a3412,stroke-width:2px
+    classDef storage fill:#dcfce7,stroke:#166534,stroke-width:2px
+    classDef output fill:#fce7f3,stroke:#9d174d,stroke-width:2px
+    classDef decision fill:#fef9c3,stroke:#854d0e,stroke-width:2px,stroke-dasharray: 5 5
+
+    %% Source Layer
+    SP[("SharePoint Sites\norbrick.sharepoint.com")]:::source
+    ENV[(".env credentials")]:::source
+
+    %% Comparison Layer
+    LIST[list_sharepoint_sites.py]:::process
+    COMP[comparison.py]:::process
+    CACHE[(sharepoint_sites.json\nprevious snapshot)]:::storage
+
+    %% Pipeline Layer
+    PIPE[sharepoint_new_site_pipeline.py]:::process
+    GRAPH[GraphClient\n(sharepoint_items_json_with_date.py)]:::process
+    
+    %% Document Classification
+    CLASS[Document Classification Engine]:::process
+    TRACKS[TRACKS mapping\n(hcm→HCM, scm→SCM, etc.)]:::storage
+    DOCPATHS[DOCUMENT_PATHS patterns\n(understudy/rtm→RTM, etc.)]:::storage
+
+    %% Output Generation
+    EXPORT[Export Site Data]:::process
+    STRUCT[structure.txt\n(folder tree)]:::output
+    JSON[<site_name>.json\n(document records)]:::output
+
+    %% Neo4j Ingestion
+    MAIN[main.py\n(Orchestrator)]:::process
+    INGEST[ingest_to_neo4j.py]:::process
+    CYPHER[ingest_generated.cypher]:::output
+    
+    %% Neo4j Database
+    NEO4J[("Neo4j Knowledge Graph")]:::storage
+    
+    %% Graph Schema
+    subgraph NEO4J_SCHEMA [Neo4j Graph Structure]
+        COMPANY[Company: Orbrick]
+        TRACK_HCM[Track: HCM]
+        TRACK_SCM[Track: SCM]
+        PROJ_BOH[Project: Blue Ocean Health]
+        PROJ_EMI[Project: Emicool]
+        PROJ_HEN[Project: Hendrick Health]
+        PROJ_NI[Project: Network Intelligence]
+        PROJ_PM[Project: Plus Malaysia]
+        PROJ_TRP[Project: TRPGlobal]
+        PROJ_TAW[Project: Tawuniya-PWC]
+        DOC_RTM[Document:RTM]
+        DOC_SDD[Document:SDD]
+        DOC_RDD[Document:RDD]
+        DOC_UG[Document:USER_GUIDE]
+        DOC_DM[Document:DATA_MIGRATION]
+        DOC_OTHER[...32 more types]
+    end
+
+    %% Flow Connections
+    SP --> LIST
+    ENV --> LIST
+    LIST --> COMP
+    CACHE --> COMP
+    COMP -->|added_sites JSON| PIPE
+    PIPE --> GRAPH
+    GRAPH --> CLASS
+    TRACKS --> CLASS
+    DOCPATHS --> CLASS
+    CLASS --> EXPORT
+    EXPORT --> STRUCT
+    EXPORT --> JSON
+    JSON --> MAIN
+    MAIN --> INGEST
+    INGEST --> CYPHER
+    CYPHER --> NEO4J
+    SCHEMA -.-> NEO4J
+
+    COMPANY --> TRACK_HCM
+    COMPANY --> TRACK_SCM
+    COMPANY -.-> PROJ_BOH
+    COMPANY -.-> PROJ_EMI
+    COMPANY -.-> PROJ_HEN
+    COMPANY -.-> PROJ_NI
+    COMPANY -.-> PROJ_PM
+    COMPANY -.-> PROJ_TRP
+    COMPANY -.-> PROJ_TAW
+    TRACK_HCM -.-> DOC_RTM
+    TRACK_HCM -.-> DOC_SDD
+    TRACK_HCM -.-> DOC_RDD
+    TRACK_HCM -.-> DOC_UG
+    TRACK_HCM -.-> DOC_DM
+    TRACK_HCM -.-> DOC_OTHER
+    TRACK_SCM -.-> DOC_RTM
+    TRACK_SCM -.-> DOC_SDD
+    PROJ_BOH -.-> DOC_RTM
+    PROJ_BOH -.-> DOC_SDD
+    </div>
+
+    <h2>🔄 Pipeline Flow</h2>
+
+    <div class="flow">
+        <div class="step">
+            <div class="step-number">1</div>
+            <h4>Site Discovery</h4>
+            <ul>
+                <li><code>list_sharepoint_sites.py</code> fetches all sites via Graph API</li>
+                <li><code>comparison.py</code> diffs against <code>sharepoint_sites.json</code></li>
+                <li>Outputs <code>added_sites</code> array (new sites only)</li>
+            </ul>
+        </div>
+        <div class="step">
+            <div class="step-number">2</div>
+            <h4>Document Extraction</h4>
+            <ul>
+                <li>Recursive folder traversal via <code>GraphClient</code></li>
+                <li>Path pattern matching → <code>department</code> + <code>document_type</code></li>
+                <li>Extracts metadata: name, URL, path, modified date, version</li>
+            </ul>
+        </div>
+        <div class="step">
+            <div class="step-number">3</div>
+            <h4>Classification & Export</h4>
+            <ul>
+                <li><code>TRACKS</code> mapping: folder → department</li>
+                <li><code>DOCUMENT_PATHS</code> patterns: path → Neo4j label</li>
+                <li>Outputs per-site JSON + folder tree visualization</li>
+            </ul>
+        </div>
+        <div class="step">
+            <div class="step-number">4</div>
+            <h4>Neo4j Ingestion</h4>
+            <ul>
+                <li><code>main.py</code> orchestrates full pipeline</li>
+                <li><code>ingest_to_neo4j.py</code> generates Cypher</li>
+                <li><code>MERGE</code> on <code>sharepoint_url</code> = upsert</li>
+                <li>Dual labels: <code>Document:TYPE</code></li>
+            </ul>
+        </div>
+    </div>
+
+    <h2>📋 Document Record Schema</h2>
+
+    <div class="card">
+        <h3>JSON Output Format</h3>
+        <pre><code>{
+  "department": "HCM",
+  "document_name": "BOH_HCM_Absence_SDD_v2.0.docx",
+  "document_type": "SDD",
+  "file_extension": "docx",
+  "modified_timestamp": "2026-11-02T07:38:27Z",
+  "sharepoint_path": "/YASHRAJ/3. Redesign/SDD/HCM/...",
+  "sharepoint_url": "https://orbrick.sharepoint.com/...",
+  "version": "v2.0"
+}</code></pre>
+    </div>
+
+    <h2>🗄️ Neo4j Graph Schema</h2>
+
+    <div class="card">
+        <h3>Node Hierarchy</h3>
+        <table>
+            <thead>
+                <tr><th>Level</th><th>Label</th><th>Count</th><th>Key Properties</th></tr>
+            </thead>
+            <tbody>
+                <tr><td>1</td><td><code>Company</code></td><td>1</td><td>name: "Orbrick"</td></tr>
+                <tr><td>2</td><td><code>Track</code></td><td>2</td><td>name: "HCM", "SCM"</td></tr>
+                <tr><td>3</td><td><code>Project</code></td><td>7</td><td>name: "Blue Ocean Health", "Emicool", ...</td></tr>
+                <tr><td>4</td><td><code>Document:TYPE</code></td><td>~391</td><td>9 properties (see JSON schema)</td></tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="card">
+        <h3>Document Types (37 Labels)</h3>
+        <table>
+            <thead>
+                <tr><th>Category</th><th>Types</th></tr>
+            </thead>
+            <tbody>
+                <tr><td>Requirements & Design</td><td>RDD, SDD, TDD, HLA</td></tr>
+                <tr><td>Testing</td><td>TEST_SCRIPT, REPORT_TEST_OUTPUT, REPORT_REVIEW, SAMPLE_DATA</td></tr>
+                <tr><td>Process & Config</td><td>PROCESS_FLOW, CONFIG_WORKBOOK, PROCESS_DISCOVERY, FAST_FORMULA</td></tr>
+                <tr><td>Migration & Data</td><td>DATA_MIGRATION, MIGRATION_DOC</td></tr>
+                <tr><td>User Enablement</td><td>USER_GUIDE, TRAINING</td></tr>
+                <tr><td>Reports</td><td>REPORT_FORMAT, REPORT_INVENTORY, STATUS_REPORT</td></tr>
+                <tr><td>Project Mgmt</td><td>KICKOFF_DECK, RAID_LOG, SOW, MOM, HANDOVER</td></tr>
+                <tr><td>Tickets & Issues</td><td>TICKET_LOG, TICKET_RCA</td></tr>
+                <tr><td>Other</td><td>POC, DOA, AUDIT, ORACLE_SR, RTM, TEMPLATE, QUESTIONNAIRE, UNKNOWN, RAID_LOG, HANDOVER</td></tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="card">
+        <h3>Relationships</h3>
+        <table>
+            <thead>
+                <tr><th>Type</th><th>Direction</th><th>Count</th></tr>
+            </thead>
+            <tbody>
+                <tr><td><code>HAS_TRACK</code></td><td>Company → Track</td><td>2</td></tr>
+                <tr><td><code>HAS_TRACK</code></td><td>Company → Project</td><td>7</td></tr>
+                <tr><td><code>HAS_DOCUMENT</code></td><td>Track → Document</td><td>~391</td></tr>
+                <tr><td><code>HAS_DOCUMENT</code></td><td>Project → Document</td><td>~391</td></tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h2>🚀 Usage</h2>
+
+    <div class="card">
+        <h3>Command Line Options</h3>
+        <table>
+            <thead>
+                <tr><th>Command</th><th>Description</th></tr>
+            </thead>
+            <tbody>
+                <tr><td><code>python main.py</code></td><td>Full sync (SharePoint → Neo4j)</td></tr>
+                <tr><td><code>python main.py --dry-run</code></td><td>Validate + generate Cypher only</td></tr>
+                <tr><td><code>python main.py --skip-sharepoint</code></td><td>Ingest existing JSON files only</td></tr>
+                <tr><td><code>python main.py --output-dir ./exports</code></td><td>Custom output directory</td></tr>
+                <tr><td><code>python main.py --execute-cypher</code></td><td>Execute via Hermes MCP</td></tr>
+                <tr><td><code>python main.py --skip-sharepoint --output-dir "file.json"</code></td><td>Ingest specific JSON file</td></tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h2>🔧 Extending the Pipeline</h2>
+
+    <div class="card">
+        <h3>Add New Document Type</h3>
+        <ol>
+            <li>Add to <code>VALID_DOC_TYPES</code> in <code>ingest_to_neo4j.py</code></li>
+            <li>Add path pattern to <code>DOCUMENT_PATHS</code> in <code>sharepoint_new_site_pipeline.py</code></li>
+            <li>Neo4j label created automatically via <code>MERGE</code></li>
+        </ol>
+    </div>
+
+    <div class="card">
+        <h3>Add New Track</h3>
+        <ol>
+            <li>Add to <code>TRACKS</code> mapping in pipeline</li>
+            <li>Add to <code>EXISTING_TRACKS</code> in ingestion</li>
+            <li>Add to <code>DEPARTMENT_TO_TRACK</code> mapping</li>
+        </ol>
+    </div>
+
+    <div class="card">
+        <h3>Add New Project</h3>
+        <ol>
+            <li>Add to <code>EXISTING_PROJECTS</code> in ingestion</li>
+            <li>Add keyword to <code>PROJECT_KEYWORDS</code> for auto-inference</li>
+        </ol>
+    </div>
+
+    <hr style="margin: 40px 0; border-color: #e5e7eb;">
+    <p style="text-align: center; color: #9ca3af;">
+        Generated for SharePoint → Neo4j Sync Pipeline<br>
+        <small>Last updated: 2026</small>
+    </p>
+
+    <script>
+        mermaid.initialize({ 
+            startOnLoad: true,
+            theme: 'default',
+            flowchart: { 
+                useMaxWidth: true,
+                htmlLabels: true,
+                curve: 'basis'
+            }
+        });
+    </script>
+</body>
+</html>

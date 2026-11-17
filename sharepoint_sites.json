@@ -186,12 +186,6 @@
         "id": "orbrick.sharepoint.com,9d386a81-c55d-49de-9696-742166ab2216,a9565808-0d95-4f1f-8fad-72b4f0feedce"
     },
     {
-        "name": "coJsE0OdIkqu2uEOCncHORy4IBVO665EuPhCczcf3kY",
-        "displayName": "Designer",
-        "url": "https://orbrick.sharepoint.com/contentstorage/coJsE0OdIkqu2uEOCncHORy4IBVO665EuPhCczcf3kY",
-        "id": "orbrick.sharepoint.com,e84e5ae7-9005-4f31-a8fa-1120c6579f07,5f32b581-87d8-47b9-b0e3-266a49fa90f1"
-    },
-    {
         "name": "coJsE0OdIkqu2uEOCncHOSHtV1jz98hBnPkomzOGtbU",
         "displayName": "Designer",
         "url": "https://orbrick.sharepoint.com/contentstorage/coJsE0OdIkqu2uEOCncHOSHtV1jz98hBnPkomzOGtbU",
@@ -262,12 +256,6 @@
         "displayName": "Designer",
         "url": "https://orbrick.sharepoint.com/contentstorage/coJsE0OdIkqu2uEOCncHOTP62VHx-r5OvU4ntQsdGaw",
         "id": "orbrick.sharepoint.com,7b75bc8a-ce8c-43f1-b125-2e9e8019d6d8,b9b06d12-ddba-4a8f-8f3b-28b6dab9464e"
-    },
-    {
-        "name": "coJsE0OdIkqu2uEOCncHOTuZtHYDlp9AqZPdjfGW6rc",
-        "displayName": "Designer",
-        "url": "https://orbrick.sharepoint.com/contentstorage/coJsE0OdIkqu2uEOCncHOTuZtHYDlp9AqZPdjfGW6rc",
-        "id": "orbrick.sharepoint.com,ea3a47fb-b5d1-4e70-820e-f1e46ff50d27,a77aa7dd-ba54-4055-9927-e26b4759dc55"
     },
     {
         "name": "coJsE0OdIkqu2uEOCncHOU-Cd9NA4N9GlJLbS9WWPiw",
@@ -616,6 +604,12 @@
         "displayName": "My workspace",
         "url": "https://orbrick.sharepoint.com/contentstorage/x8FNO-xtskuCRX2_fMTHLUFm_5LDZ9dKrLaU5Lucf2M",
         "id": "orbrick.sharepoint.com,ee247b9b-da67-4df4-adbf-e730a97e25b9,3f54cb7f-c7c3-4d19-912f-3d5495ecb137"
+    },
+    {
+        "name": "x8FNO-xtskuCRX2_fMTHLVEIjh9vnOVKvlFtrUiAAs4",
+        "displayName": "5f75a9cf-0d6e-4430-8f01-d6c4f9f43ccb",
+        "url": "https://orbrick.sharepoint.com/contentstorage/x8FNO-xtskuCRX2_fMTHLVEIjh9vnOVKvlFtrUiAAs4",
+        "id": "orbrick.sharepoint.com,38331b3e-343a-42ac-ac94-ac50d040d7d3,e674079e-2612-4ec9-82ec-43e92f76dee1"
     },
     {
         "name": "x8FNO-xtskuCRX2_fMTHLVGtZNgkYh5BlPpf_XMmpBg",
@@ -1044,6 +1038,12 @@
         "id": "orbrick.sharepoint.com,ffe6d2f1-e442-4726-b09a-9ec4d015bd67,5edc4f54-a547-4858-aa83-f87457978434"
     },
     {
+        "name": "NEW_TEAM_TESTTT",
+        "displayName": "NEW_TEAM_TESTTT",
+        "url": "https://orbrick.sharepoint.com/sites/NEW_TEAM_TESTTT",
+        "id": "orbrick.sharepoint.com,2235648f-da90-4b6d-9bbe-a76d59e2efc7,582b9ef9-d628-40b1-8a39-453271ab312c"
+    },
+    {
         "name": "Nimesh",
         "displayName": "Nimesh",
         "url": "https://orbrick.sharepoint.com/sites/Nimesh",
@@ -1104,6 +1104,12 @@
         "id": "orbrick.sharepoint.com,ae67d36b-cbec-47da-8b93-2173c27148f9,d3804ebc-0e07-46d5-82ac-755ad7e2a930"
     },
     {
+        "name": "OracleFusionPassword-Admins",
+        "displayName": "Oracle Fusion Password - Admins",
+        "url": "https://orbrick.sharepoint.com/sites/OracleFusionPassword-Admins",
+        "id": "orbrick.sharepoint.com,4dc829b6-768d-4641-bb26-02c883bd3451,582b9ef9-d628-40b1-8a39-453271ab312c"
+    },
+    {
         "name": "OrbriAssists",
         "displayName": "Orbri Assists",
         "url": "https://orbrick.sharepoint.com/sites/OrbriAssists",
@@ -1132,6 +1138,24 @@
         "displayName": "ORBRICK DLP GROUP",
         "url": "https://orbrick.sharepoint.com/sites/orbrickdlp",
         "id": "orbrick.sharepoint.com,57fc34e6-dd98-4472-a549-4c7608f9e683,741eb896-3b6a-4133-bfa6-d22c2754006d"
+    },
+    {
+        "name": "OrbrickGlobalOperations",
+        "displayName": "Orbrick Global Operations",
+        "url": "https://orbrick.sharepoint.com/sites/OrbrickGlobalOperations",
+        "id": "orbrick.sharepoint.com,a666c6d9-1302-4166-b46d-6f5365a8df40,582b9ef9-d628-40b1-8a39-453271ab312c"
+    },
+    {
+        "name": "OrbrickGlobalOperations-OpsMgmt",
+        "displayName": "Orbrick Global Operations-Ops Mgmt",
+        "url": "https://orbrick.sharepoint.com/sites/OrbrickGlobalOperations-OpsMgmt",
+        "id": "orbrick.sharepoint.com,80a5503e-8b7f-48d4-9f55-be16560da4f8,46c0b879-35d9-40c9-80f1-488163c8f4d9"
+    },
+    {
+        "name": "OrbrickGlobalOperations-OrbrickTraveldesk",
+        "displayName": "Orbrick Global Operations-Orbrick Traveldesk",
+        "url": "https://orbrick.sharepoint.com/sites/OrbrickGlobalOperations-OrbrickTraveldesk",
+        "id": "orbrick.sharepoint.com,6ad0b53f-3672-4e5f-ba22-5ac728446537,46c0b879-35d9-40c9-80f1-488163c8f4d9"
     },
     {
         "name": "OrbrickKeyTeam",
@@ -1380,6 +1404,18 @@
         "id": "orbrick.sharepoint.com,944404f7-91a8-4bae-aa49-f2ccb8e0fb07,5edc4f54-a547-4858-aa83-f87457978434"
     },
     {
+        "name": "TEST35484",
+        "displayName": "TEST",
+        "url": "https://orbrick.sharepoint.com/sites/TEST35484",
+        "id": "orbrick.sharepoint.com,cf6114cf-744f-4303-aba9-0007e8452868,582b9ef9-d628-40b1-8a39-453271ab312c"
+    },
+    {
+        "name": "Test76465",
+        "displayName": "Test",
+        "url": "https://orbrick.sharepoint.com/sites/Test76465",
+        "id": "orbrick.sharepoint.com,60d892a8-c15e-45b7-a29e-63658cc8e3b3,582b9ef9-d628-40b1-8a39-453271ab312c"
+    },
+    {
         "name": "ThoughtLeadership-WorkingGroup",
         "displayName": "Thought Leadership - Working Group",
         "url": "https://orbrick.sharepoint.com/sites/ThoughtLeadership-WorkingGroup",
@@ -1438,17 +1474,5 @@
         "displayName": "Zamil - Deviation Request Project",
         "url": "https://orbrick.sharepoint.com/sites/Zamil-DeviationRequestProject",
         "id": "orbrick.sharepoint.com,b762d20f-3d26-4ea7-b288-506550e7e35a,5d836609-17c4-4b0e-bfc0-a97f3cc04434"
-    },
-    {
-        "name": "TEST35484",
-        "displayName": "TEST",
-        "url": "https://orbrick.sharepoint.com/sites/TEST35484",
-        "id": "orbrick.sharepoint.com,cf6114cf-744f-4303-aba9-0007e8452868,582b9ef9-d628-40b1-8a39-453271ab312c"
-    },
-    {
-        "name": "Test76465",
-        "displayName": "Test",
-        "url": "https://orbrick.sharepoint.com/sites/Test76465",
-        "id": "orbrick.sharepoint.com,60d892a8-c15e-45b7-a29e-63658cc8e3b3,582b9ef9-d628-40b1-8a39-453271ab312c"
     }
 ]

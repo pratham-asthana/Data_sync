@@ -1,4 +1,4 @@
-
+import argparse
 import json
 import sys
 import subprocess
@@ -30,6 +30,14 @@ def save_sites(sites):
 
 
 def main():
+    parser = argparse.ArgumentParser(description="Compare SharePoint sites and detect additions.")
+    parser.add_argument(
+        "--json",
+        action="store_true",
+        help="Output result as JSON"
+    )
+    args = parser.parse_args()
+    
     if not LIST_SCRIPT.exists():
         raise FileNotFoundError(
             f"Site-listing script not found: {LIST_SCRIPT}"
@@ -93,7 +101,10 @@ def main():
                 known_urls.add(url)
 
     if not added_sites:
-        print("False")
+        if args.json:
+            print(json.dumps({"added_sites": []}))
+        else:
+            print("False")
         return
 
     # Merge old and new sites, preserving existing entries.
@@ -118,15 +129,17 @@ def main():
 
     save_sites(merged_sites)
 
-    print("True")
-    print("Added sites:")
+    if args.json:
+        print(json.dumps({"added_sites": added_sites}))
+    else:
+        print("True")
+        print("Added sites:")
+        for site in added_sites:
+            print(f"Name: {site['name']}")
+            print(f"URL: {site['url']}")
+            print("-" * 40)
 
-    for site in added_sites:
-        print(f"Name: {site['name']}")
-        print(f"URL: {site['url']}")
-        print("-" * 40)
-
-    print(f"Updated JSON: {JSON_FILE}")
+        print(f"Updated JSON: {JSON_FILE}")
 
 
 if __name__ == "__main__":
