@@ -1,0 +1,2288 @@
+{
+    "statistics": {
+        "total_nodes": 385,
+        "total_relationships": 760,
+        "total_labels": 38,
+        "total_relationship_types": 2
+    },
+    "node_labels": {
+        "AUDIT": {
+            "node_count": 3,
+            "properties": {
+                "department": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 3
+                },
+                "document_name": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 3
+                },
+                "document_type": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 3
+                },
+                "file_extension": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 3
+                },
+                "modified_timestamp": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 3
+                },
+                "sharepoint_path": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 3
+                },
+                "sharepoint_url": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 3
+                },
+                "version": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 3
+                }
+            }
+        },
+        "CONFIG_WORKBOOK": {
+            "node_count": 26,
+            "properties": {
+                "department": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 26
+                },
+                "document_name": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 26
+                },
+                "document_type": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 26
+                },
+                "file_extension": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 26
+                },
+                "modified_timestamp": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 26
+                },
+                "sharepoint_path": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 26
+                },
+                "sharepoint_url": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 26
+                },
+                "version": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 26
+                }
+            }
+        },
+        "Company": {
+            "node_count": 1,
+            "properties": {
+                "name": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 1
+                }
+            }
+        },
+        "DATA_MIGRATION": {
+            "node_count": 37,
+            "properties": {
+                "department": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 37
+                },
+                "document_name": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 37
+                },
+                "document_type": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 37
+                },
+                "file_extension": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 37
+                },
+                "modified_timestamp": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 37
+                },
+                "sharepoint_path": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 37
+                },
+                "sharepoint_url": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 37
+                },
+                "version": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 37
+                }
+            }
+        },
+        "DOA": {
+            "node_count": 7,
+            "properties": {
+                "department": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 7
+                },
+                "document_name": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 7
+                },
+                "document_type": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 7
+                },
+                "file_extension": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 7
+                },
+                "modified_timestamp": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 7
+                },
+                "sharepoint_path": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 7
+                },
+                "sharepoint_url": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 7
+                },
+                "version": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 7
+                }
+            }
+        },
+        "Document": {
+            "node_count": 376,
+            "properties": {
+                "department": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 376
+                },
+                "document_name": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 376
+                },
+                "document_type": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 376
+                },
+                "file_extension": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 376
+                },
+                "modified_timestamp": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 376
+                },
+                "sharepoint_path": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 376
+                },
+                "sharepoint_url": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 376
+                },
+                "summary": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 43
+                },
+                "version": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 376
+                }
+            }
+        },
+        "FAST_FORMULA": {
+            "node_count": 3,
+            "properties": {
+                "department": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 3
+                },
+                "document_name": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 3
+                },
+                "document_type": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 3
+                },
+                "file_extension": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 3
+                },
+                "modified_timestamp": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 3
+                },
+                "sharepoint_path": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 3
+                },
+                "sharepoint_url": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 3
+                },
+                "version": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 3
+                }
+            }
+        },
+        "HANDOVER": {
+            "node_count": 1,
+            "properties": {
+                "department": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 1
+                },
+                "document_name": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 1
+                },
+                "document_type": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 1
+                },
+                "file_extension": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 1
+                },
+                "modified_timestamp": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 1
+                },
+                "sharepoint_path": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 1
+                },
+                "sharepoint_url": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 1
+                },
+                "version": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 1
+                }
+            }
+        },
+        "HLA": {
+            "node_count": 9,
+            "properties": {
+                "department": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 9
+                },
+                "document_name": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 9
+                },
+                "document_type": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 9
+                },
+                "file_extension": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 9
+                },
+                "modified_timestamp": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 9
+                },
+                "sharepoint_path": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 9
+                },
+                "sharepoint_url": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 9
+                },
+                "version": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 9
+                }
+            }
+        },
+        "KICKOFF_DECK": {
+            "node_count": 1,
+            "properties": {
+                "department": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 1
+                },
+                "document_name": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 1
+                },
+                "document_type": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 1
+                },
+                "file_extension": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 1
+                },
+                "modified_timestamp": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 1
+                },
+                "sharepoint_path": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 1
+                },
+                "sharepoint_url": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 1
+                },
+                "version": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 1
+                }
+            }
+        },
+        "MIGRATION_DOC": {
+            "node_count": 2,
+            "properties": {
+                "department": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 2
+                },
+                "document_name": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 2
+                },
+                "document_type": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 2
+                },
+                "file_extension": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 2
+                },
+                "modified_timestamp": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 2
+                },
+                "sharepoint_path": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 2
+                },
+                "sharepoint_url": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 2
+                },
+                "version": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 2
+                }
+            }
+        },
+        "MOM": {
+            "node_count": 3,
+            "properties": {
+                "department": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 3
+                },
+                "document_name": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 3
+                },
+                "document_type": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 3
+                },
+                "file_extension": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 3
+                },
+                "modified_timestamp": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 3
+                },
+                "sharepoint_path": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 3
+                },
+                "sharepoint_url": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 3
+                },
+                "version": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 3
+                }
+            }
+        },
+        "ORACLE_SR": {
+            "node_count": 2,
+            "properties": {
+                "department": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 2
+                },
+                "document_name": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 2
+                },
+                "document_type": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 2
+                },
+                "file_extension": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 2
+                },
+                "modified_timestamp": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 2
+                },
+                "sharepoint_path": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 2
+                },
+                "sharepoint_url": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 2
+                },
+                "version": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 2
+                }
+            }
+        },
+        "POC": {
+            "node_count": 8,
+            "properties": {
+                "department": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 8
+                },
+                "document_name": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 8
+                },
+                "document_type": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 8
+                },
+                "file_extension": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 8
+                },
+                "modified_timestamp": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 8
+                },
+                "sharepoint_path": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 8
+                },
+                "sharepoint_url": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 8
+                },
+                "version": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 8
+                }
+            }
+        },
+        "PROCESS_DISCOVERY": {
+            "node_count": 1,
+            "properties": {
+                "department": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 1
+                },
+                "document_name": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 1
+                },
+                "document_type": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 1
+                },
+                "file_extension": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 1
+                },
+                "modified_timestamp": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 1
+                },
+                "sharepoint_path": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 1
+                },
+                "sharepoint_url": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 1
+                },
+                "version": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 1
+                }
+            }
+        },
+        "PROCESS_FLOW": {
+            "node_count": 33,
+            "properties": {
+                "department": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 33
+                },
+                "document_name": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 33
+                },
+                "document_type": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 33
+                },
+                "file_extension": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 33
+                },
+                "modified_timestamp": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 33
+                },
+                "sharepoint_path": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 33
+                },
+                "sharepoint_url": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 33
+                },
+                "version": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 33
+                }
+            }
+        },
+        "Project": {
+            "node_count": 7,
+            "properties": {
+                "name": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 7
+                }
+            }
+        },
+        "QUESTIONNAIRE": {
+            "node_count": 1,
+            "properties": {
+                "department": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 1
+                },
+                "document_name": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 1
+                },
+                "document_type": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 1
+                },
+                "file_extension": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 1
+                },
+                "modified_timestamp": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 1
+                },
+                "sharepoint_path": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 1
+                },
+                "sharepoint_url": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 1
+                },
+                "version": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 1
+                }
+            }
+        },
+        "RAID_LOG": {
+            "node_count": 1,
+            "properties": {
+                "department": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 1
+                },
+                "document_name": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 1
+                },
+                "document_type": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 1
+                },
+                "file_extension": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 1
+                },
+                "modified_timestamp": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 1
+                },
+                "sharepoint_path": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 1
+                },
+                "sharepoint_url": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 1
+                },
+                "version": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 1
+                }
+            }
+        },
+        "RDD": {
+            "node_count": 20,
+            "properties": {
+                "department": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 20
+                },
+                "document_name": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 20
+                },
+                "document_type": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 20
+                },
+                "file_extension": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 20
+                },
+                "modified_timestamp": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 20
+                },
+                "sharepoint_path": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 20
+                },
+                "sharepoint_url": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 20
+                },
+                "summary": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 15
+                },
+                "version": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 20
+                }
+            }
+        },
+        "REPORT_FORMAT": {
+            "node_count": 5,
+            "properties": {
+                "department": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 5
+                },
+                "document_name": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 5
+                },
+                "document_type": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 5
+                },
+                "file_extension": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 5
+                },
+                "modified_timestamp": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 5
+                },
+                "sharepoint_path": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 5
+                },
+                "sharepoint_url": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 5
+                },
+                "version": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 5
+                }
+            }
+        },
+        "REPORT_INVENTORY": {
+            "node_count": 1,
+            "properties": {
+                "department": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 1
+                },
+                "document_name": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 1
+                },
+                "document_type": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 1
+                },
+                "file_extension": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 1
+                },
+                "modified_timestamp": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 1
+                },
+                "sharepoint_path": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 1
+                },
+                "sharepoint_url": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 1
+                },
+                "version": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 1
+                }
+            }
+        },
+        "REPORT_REVIEW": {
+            "node_count": 2,
+            "properties": {
+                "department": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 2
+                },
+                "document_name": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 2
+                },
+                "document_type": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 2
+                },
+                "file_extension": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 2
+                },
+                "modified_timestamp": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 2
+                },
+                "sharepoint_path": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 2
+                },
+                "sharepoint_url": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 2
+                },
+                "version": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 2
+                }
+            }
+        },
+        "REPORT_TEST_OUTPUT": {
+            "node_count": 34,
+            "properties": {
+                "department": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 34
+                },
+                "document_name": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 34
+                },
+                "document_type": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 34
+                },
+                "file_extension": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 34
+                },
+                "modified_timestamp": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 34
+                },
+                "sharepoint_path": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 34
+                },
+                "sharepoint_url": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 34
+                },
+                "version": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 34
+                }
+            }
+        },
+        "RTM": {
+            "node_count": 2,
+            "properties": {
+                "department": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 2
+                },
+                "document_name": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 2
+                },
+                "document_type": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 2
+                },
+                "file_extension": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 2
+                },
+                "modified_timestamp": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 2
+                },
+                "sharepoint_path": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 2
+                },
+                "sharepoint_url": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 2
+                },
+                "version": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 2
+                }
+            }
+        },
+        "SAMPLE_DATA": {
+            "node_count": 2,
+            "properties": {
+                "department": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 2
+                },
+                "document_name": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 2
+                },
+                "document_type": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 2
+                },
+                "file_extension": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 2
+                },
+                "modified_timestamp": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 2
+                },
+                "sharepoint_path": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 2
+                },
+                "sharepoint_url": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 2
+                },
+                "version": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 2
+                }
+            }
+        },
+        "SDD": {
+            "node_count": 29,
+            "properties": {
+                "department": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 29
+                },
+                "document_name": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 29
+                },
+                "document_type": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 29
+                },
+                "file_extension": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 29
+                },
+                "modified_timestamp": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 29
+                },
+                "sharepoint_path": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 29
+                },
+                "sharepoint_url": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 29
+                },
+                "summary": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 28
+                },
+                "version": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 29
+                }
+            }
+        },
+        "SOW": {
+            "node_count": 4,
+            "properties": {
+                "department": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 4
+                },
+                "document_name": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 4
+                },
+                "document_type": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 4
+                },
+                "file_extension": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 4
+                },
+                "modified_timestamp": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 4
+                },
+                "sharepoint_path": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 4
+                },
+                "sharepoint_url": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 4
+                },
+                "version": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 4
+                }
+            }
+        },
+        "STATUS_REPORT": {
+            "node_count": 7,
+            "properties": {
+                "department": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 7
+                },
+                "document_name": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 7
+                },
+                "document_type": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 7
+                },
+                "file_extension": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 7
+                },
+                "modified_timestamp": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 7
+                },
+                "sharepoint_path": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 7
+                },
+                "sharepoint_url": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 7
+                },
+                "version": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 7
+                }
+            }
+        },
+        "TDD": {
+            "node_count": 16,
+            "properties": {
+                "department": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 16
+                },
+                "document_name": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 16
+                },
+                "document_type": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 16
+                },
+                "file_extension": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 16
+                },
+                "modified_timestamp": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 16
+                },
+                "sharepoint_path": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 16
+                },
+                "sharepoint_url": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 16
+                },
+                "version": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 16
+                }
+            }
+        },
+        "TEMPLATE": {
+            "node_count": 2,
+            "properties": {
+                "department": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 2
+                },
+                "document_name": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 2
+                },
+                "document_type": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 2
+                },
+                "file_extension": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 2
+                },
+                "modified_timestamp": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 2
+                },
+                "sharepoint_path": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 2
+                },
+                "sharepoint_url": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 2
+                },
+                "version": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 2
+                }
+            }
+        },
+        "TEST_SCRIPT": {
+            "node_count": 30,
+            "properties": {
+                "department": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 30
+                },
+                "document_name": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 30
+                },
+                "document_type": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 30
+                },
+                "file_extension": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 30
+                },
+                "modified_timestamp": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 30
+                },
+                "sharepoint_path": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 30
+                },
+                "sharepoint_url": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 30
+                },
+                "version": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 30
+                }
+            }
+        },
+        "TICKET_LOG": {
+            "node_count": 3,
+            "properties": {
+                "department": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 3
+                },
+                "document_name": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 3
+                },
+                "document_type": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 3
+                },
+                "file_extension": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 3
+                },
+                "modified_timestamp": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 3
+                },
+                "sharepoint_path": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 3
+                },
+                "sharepoint_url": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 3
+                },
+                "version": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 3
+                }
+            }
+        },
+        "TICKET_RCA": {
+            "node_count": 4,
+            "properties": {
+                "department": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 4
+                },
+                "document_name": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 4
+                },
+                "document_type": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 4
+                },
+                "file_extension": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 4
+                },
+                "modified_timestamp": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 4
+                },
+                "sharepoint_path": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 4
+                },
+                "sharepoint_url": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 4
+                },
+                "version": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 4
+                }
+            }
+        },
+        "TRAINING": {
+            "node_count": 5,
+            "properties": {
+                "department": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 5
+                },
+                "document_name": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 5
+                },
+                "document_type": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 5
+                },
+                "file_extension": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 5
+                },
+                "modified_timestamp": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 5
+                },
+                "sharepoint_path": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 5
+                },
+                "sharepoint_url": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 5
+                },
+                "version": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 5
+                }
+            }
+        },
+        "Track": {
+            "node_count": 1,
+            "properties": {
+                "name": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 1
+                }
+            }
+        },
+        "UNKNOWN": {
+            "node_count": 22,
+            "properties": {
+                "department": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 22
+                },
+                "document_name": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 22
+                },
+                "document_type": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 22
+                },
+                "file_extension": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 22
+                },
+                "modified_timestamp": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 22
+                },
+                "sharepoint_path": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 22
+                },
+                "sharepoint_url": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 22
+                },
+                "version": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 22
+                }
+            }
+        },
+        "USER_GUIDE": {
+            "node_count": 50,
+            "properties": {
+                "department": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 50
+                },
+                "document_name": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 50
+                },
+                "document_type": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 50
+                },
+                "file_extension": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 50
+                },
+                "modified_timestamp": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 50
+                },
+                "sharepoint_path": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 50
+                },
+                "sharepoint_url": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 50
+                },
+                "version": {
+                    "types": [
+                        "STRING NOT NULL"
+                    ],
+                    "occurrences": 50
+                }
+            }
+        }
+    },
+    "relationship_types": {
+        "HAS_DOCUMENT": {
+            "relationship_count": 752,
+            "properties": {}
+        },
+        "HAS_TRACK": {
+            "relationship_count": 8,
+            "properties": {}
+        }
+    },
+    "relationship_mappings": [
+        {
+            "source": "Company",
+            "relationship": "HAS_TRACK",
+            "target": "Track"
+        },
+        {
+            "source": "Project",
+            "relationship": "HAS_DOCUMENT",
+            "target": "AUDIT"
+        },
+        {
+            "source": "Project",
+            "relationship": "HAS_DOCUMENT",
+            "target": "CONFIG_WORKBOOK"
+        },
+        {
+            "source": "Project",
+            "relationship": "HAS_DOCUMENT",
+            "target": "DATA_MIGRATION"
+        },
+        {
+            "source": "Project",
+            "relationship": "HAS_DOCUMENT",
+            "target": "DOA"
+        },
+        {
+            "source": "Project",
+            "relationship": "HAS_DOCUMENT",
+            "target": "Document"
+        },
+        {
+            "source": "Project",
+            "relationship": "HAS_DOCUMENT",
+            "target": "FAST_FORMULA"
+        },
+        {
+            "source": "Project",
+            "relationship": "HAS_DOCUMENT",
+            "target": "HANDOVER"
+        },
+        {
+            "source": "Project",
+            "relationship": "HAS_DOCUMENT",
+            "target": "HLA"
+        },
+        {
+            "source": "Project",
+            "relationship": "HAS_DOCUMENT",
+            "target": "KICKOFF_DECK"
+        },
+        {
+            "source": "Project",
+            "relationship": "HAS_DOCUMENT",
+            "target": "MIGRATION_DOC"
+        },
+        {
+            "source": "Project",
+            "relationship": "HAS_DOCUMENT",
+            "target": "MOM"
+        },
+        {
+            "source": "Project",
+            "relationship": "HAS_DOCUMENT",
+            "target": "ORACLE_SR"
+        },
+        {
+            "source": "Project",
+            "relationship": "HAS_DOCUMENT",
+            "target": "POC"
+        },
+        {
+            "source": "Project",
+            "relationship": "HAS_DOCUMENT",
+            "target": "PROCESS_DISCOVERY"
+        },
+        {
+            "source": "Project",
+            "relationship": "HAS_DOCUMENT",
+            "target": "PROCESS_FLOW"
+        },
+        {
+            "source": "Project",
+            "relationship": "HAS_DOCUMENT",
+            "target": "QUESTIONNAIRE"
+        },
+        {
+            "source": "Project",
+            "relationship": "HAS_DOCUMENT",
+            "target": "RAID_LOG"
+        },
+        {
+            "source": "Project",
+            "relationship": "HAS_DOCUMENT",
+            "target": "RDD"
+        },
+        {
+            "source": "Project",
+            "relationship": "HAS_DOCUMENT",
+            "target": "REPORT_FORMAT"
+        },
+        {
+            "source": "Project",
+            "relationship": "HAS_DOCUMENT",
+            "target": "REPORT_INVENTORY"
+        },
+        {
+            "source": "Project",
+            "relationship": "HAS_DOCUMENT",
+            "target": "REPORT_REVIEW"
+        },
+        {
+            "source": "Project",
+            "relationship": "HAS_DOCUMENT",
+            "target": "REPORT_TEST_OUTPUT"
+        },
+        {
+            "source": "Project",
+            "relationship": "HAS_DOCUMENT",
+            "target": "RTM"
+        },
+        {
+            "source": "Project",
+            "relationship": "HAS_DOCUMENT",
+            "target": "SAMPLE_DATA"
+        },
+        {
+            "source": "Project",
+            "relationship": "HAS_DOCUMENT",
+            "target": "SDD"
+        },
+        {
+            "source": "Project",
+            "relationship": "HAS_DOCUMENT",
+            "target": "SOW"
+        },
+        {
+            "source": "Project",
+            "relationship": "HAS_DOCUMENT",
+            "target": "STATUS_REPORT"
+        },
+        {
+            "source": "Project",
+            "relationship": "HAS_DOCUMENT",
+            "target": "TDD"
+        },
+        {
+            "source": "Project",
+            "relationship": "HAS_DOCUMENT",
+            "target": "TEMPLATE"
+        },
+        {
+            "source": "Project",
+            "relationship": "HAS_DOCUMENT",
+            "target": "TEST_SCRIPT"
+        },
+        {
+            "source": "Project",
+            "relationship": "HAS_DOCUMENT",
+            "target": "TICKET_LOG"
+        },
+        {
+            "source": "Project",
+            "relationship": "HAS_DOCUMENT",
+            "target": "TICKET_RCA"
+        },
+        {
+            "source": "Project",
+            "relationship": "HAS_DOCUMENT",
+            "target": "TRAINING"
+        },
+        {
+            "source": "Project",
+            "relationship": "HAS_DOCUMENT",
+            "target": "UNKNOWN"
+        },
+        {
+            "source": "Project",
+            "relationship": "HAS_DOCUMENT",
+            "target": "USER_GUIDE"
+        },
+        {
+            "source": "Project",
+            "relationship": "HAS_TRACK",
+            "target": "Track"
+        },
+        {
+            "source": "Track",
+            "relationship": "HAS_DOCUMENT",
+            "target": "AUDIT"
+        },
+        {
+            "source": "Track",
+            "relationship": "HAS_DOCUMENT",
+            "target": "CONFIG_WORKBOOK"
+        },
+        {
+            "source": "Track",
+            "relationship": "HAS_DOCUMENT",
+            "target": "DATA_MIGRATION"
+        },
+        {
+            "source": "Track",
+            "relationship": "HAS_DOCUMENT",
+            "target": "DOA"
+        },
+        {
+            "source": "Track",
+            "relationship": "HAS_DOCUMENT",
+            "target": "Document"
+        },
+        {
+            "source": "Track",
+            "relationship": "HAS_DOCUMENT",
+            "target": "FAST_FORMULA"
+        },
+        {
+            "source": "Track",
+            "relationship": "HAS_DOCUMENT",
+            "target": "HANDOVER"
+        },
+        {
+            "source": "Track",
+            "relationship": "HAS_DOCUMENT",
+            "target": "HLA"
+        },
+        {
+            "source": "Track",
+            "relationship": "HAS_DOCUMENT",
+            "target": "KICKOFF_DECK"
+        },
+        {
+            "source": "Track",
+            "relationship": "HAS_DOCUMENT",
+            "target": "MIGRATION_DOC"
+        },
+        {
+            "source": "Track",
+            "relationship": "HAS_DOCUMENT",
+            "target": "MOM"
+        },
+        {
+            "source": "Track",
+            "relationship": "HAS_DOCUMENT",
+            "target": "ORACLE_SR"
+        },
+        {
+            "source": "Track",
+            "relationship": "HAS_DOCUMENT",
+            "target": "POC"
+        },
+        {
+            "source": "Track",
+            "relationship": "HAS_DOCUMENT",
+            "target": "PROCESS_DISCOVERY"
+        },
+        {
+            "source": "Track",
+            "relationship": "HAS_DOCUMENT",
+            "target": "PROCESS_FLOW"
+        },
+        {
+            "source": "Track",
+            "relationship": "HAS_DOCUMENT",
+            "target": "QUESTIONNAIRE"
+        },
+        {
+            "source": "Track",
+            "relationship": "HAS_DOCUMENT",
+            "target": "RAID_LOG"
+        },
+        {
+            "source": "Track",
+            "relationship": "HAS_DOCUMENT",
+            "target": "RDD"
+        },
+        {
+            "source": "Track",
+            "relationship": "HAS_DOCUMENT",
+            "target": "REPORT_FORMAT"
+        },
+        {
+            "source": "Track",
+            "relationship": "HAS_DOCUMENT",
+            "target": "REPORT_INVENTORY"
+        },
+        {
+            "source": "Track",
+            "relationship": "HAS_DOCUMENT",
+            "target": "REPORT_REVIEW"
+        },
+        {
+            "source": "Track",
+            "relationship": "HAS_DOCUMENT",
+            "target": "REPORT_TEST_OUTPUT"
+        },
+        {
+            "source": "Track",
+            "relationship": "HAS_DOCUMENT",
+            "target": "RTM"
+        },
+        {
+            "source": "Track",
+            "relationship": "HAS_DOCUMENT",
+            "target": "SAMPLE_DATA"
+        },
+        {
+            "source": "Track",
+            "relationship": "HAS_DOCUMENT",
+            "target": "SDD"
+        },
+        {
+            "source": "Track",
+            "relationship": "HAS_DOCUMENT",
+            "target": "SOW"
+        },
+        {
+            "source": "Track",
+            "relationship": "HAS_DOCUMENT",
+            "target": "STATUS_REPORT"
+        },
+        {
+            "source": "Track",
+            "relationship": "HAS_DOCUMENT",
+            "target": "TDD"
+        },
+        {
+            "source": "Track",
+            "relationship": "HAS_DOCUMENT",
+            "target": "TEMPLATE"
+        },
+        {
+            "source": "Track",
+            "relationship": "HAS_DOCUMENT",
+            "target": "TEST_SCRIPT"
+        },
+        {
+            "source": "Track",
+            "relationship": "HAS_DOCUMENT",
+            "target": "TICKET_LOG"
+        },
+        {
+            "source": "Track",
+            "relationship": "HAS_DOCUMENT",
+            "target": "TICKET_RCA"
+        },
+        {
+            "source": "Track",
+            "relationship": "HAS_DOCUMENT",
+            "target": "TRAINING"
+        },
+        {
+            "source": "Track",
+            "relationship": "HAS_DOCUMENT",
+            "target": "UNKNOWN"
+        },
+        {
+            "source": "Track",
+            "relationship": "HAS_DOCUMENT",
+            "target": "USER_GUIDE"
+        }
+    ]
+}

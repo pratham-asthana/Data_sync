@@ -1,0 +1,51 @@
+{
+  "site": {
+    "name": "Design Office  - Innovation Team - AI",
+    "url": "https://orbrick.sharepoint.com/sites/DesignOffice-InnovationTeam-AI",
+    "id": "orbrick.sharepoint.com,f68c1d13-bb13-44a2-82f7-f935a938bc32,40d878ad-f902-442a-8997-54cb5550a5c1"
+  },
+  "library": {
+    "name": "Documents",
+    "id": "b!Ex2M9hO7okSC9_k1qTi8Mq142EAC-SpEiZdUy1VQpcGMnE_Vaqa1QarKVW0N9Bq1",
+    "web_url": "https://orbrick.sharepoint.com/sites/DesignOffice-InnovationTeam-AI/Shared%20Documents"
+  },
+  "compared_at": "2026-10-20T12:57:38Z",
+  "previous_snapshot": "C:\\Users\\Lenovo\\Desktop\\csv_tograph\\Extra\\sharepoint_items.json",
+  "current_snapshot": "C:\\Users\\Lenovo\\Desktop\\csv_tograph\\Extra\\sharepoint_items.json",
+  "summary": {
+    "total_changes": 1,
+    "added": {
+      "total_items": 0,
+      "folders": 0,
+      "files": 0
+    },
+    "deleted": {
+      "total_items": 1,
+      "folders": 0,
+      "files": 1
+    }
+  },
+  "root": {
+    "name": "General Meetings",
+    "type": "folder",
+    "path": "General Meetings",
+    "id": "01FVNGIE36TSHM6AJYZFEKT7CZGYNLBLE5",
+    "last_modified": "2026-09-28T07:48:42Z",
+    "web_url": "https://orbrick.sharepoint.com/sites/DesignOffice-InnovationTeam-AI/Shared%20Documents/General%20Meetings",
+    "child_count": 6,
+    "children": [
+      {
+        "name": "Book.xlsx",
+        "type": "file",
+        "path": "General Meetings/Book.xlsx",
+        "id": "01FVNGIE2N57WJ4YWRTJCLGBOWICQPVE3H",
+        "last_modified": "2026-10-20T12:56:32Z",
+        "web_url": "https://orbrick.sharepoint.com/sites/DesignOffice-InnovationTeam-AI/_layouts/15/Doc.aspx?sourcedoc=%7B9EECEF4D-D162-449A-B305-D640A0FA9367%7D&file=Book.xlsx&action=default&mobileredirect=true",
+        "size_bytes": 0,
+        "mime_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+        "status": "deleted",
+        "is_new": false
+      }
+    ]
+  }
+}

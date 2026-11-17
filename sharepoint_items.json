@@ -1,0 +1,40 @@
+{
+  "site": {
+    "name": "TEST",
+    "url": "https://orbrick.sharepoint.com/sites/TEST35484",
+    "id": "orbrick.sharepoint.com,cf6114cf-744f-4303-aba9-0007e8452868,582b9ef9-d628-40b1-8a39-453271ab312c"
+  },
+  "library": {
+    "name": "Documents",
+    "id": "b!zxRhz090A0OrqQAH6EUoaPmeK1go1rFAijlFMnGrMSxOpjiuagOFTpWqwo10sk94",
+    "web_url": "https://orbrick.sharepoint.com/sites/TEST35484/Shared%20Documents"
+  },
+  "retrieved_at": "2026-10-30T08:32:15Z",
+  "recursive": true,
+  "summary": {
+    "total_items": 1,
+    "folders": 1,
+    "files": 0
+  },
+  "root": {
+    "name": "root",
+    "type": "folder",
+    "path": "",
+    "id": "01YLKBXHN6Y2GOVW7725BZO354PWSELRRZ",
+    "last_modified": "2026-10-29T14:09:26Z",
+    "web_url": "https://orbrick.sharepoint.com/sites/TEST35484/Shared%20Documents",
+    "child_count": 1,
+    "children": [
+      {
+        "name": "Genral",
+        "type": "folder",
+        "path": "Genral",
+        "id": "01YLKBXHMQ4T7J2KQB4ZALSV7EUXP4SOO7",
+        "last_modified": "2026-10-29T14:09:24Z",
+        "web_url": "https://orbrick.sharepoint.com/sites/TEST35484/Shared%20Documents/Genral",
+        "child_count": 0,
+        "children": []
+      }
+    ]
+  }
+}
