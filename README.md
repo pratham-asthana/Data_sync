@@ -18,38 +18,38 @@ flowchart TD
     classDef decision fill:#fff9c4,stroke:#fbc02d,stroke-width:2px,dotted
 
     %% Source Layer
-    SP[("SharePoint Sites\norbrick.sharepoint.com")]:::source
-    ENV[(".env credentials")]:::source
+    SP[["SharePoint Sites<br/>orbrick.sharepoint.com"]]:::source
+    ENV[[".env credentials"]]:::source
 
     %% Comparison Layer
-    LIST[list_sharepoint_sites.py]:::process
-    COMP[comparison.py]:::process
-    CACHE[(sharepoint_sites.json\nprevious snapshot)]:::storage
+    LIST["list_sharepoint_sites.py"]:::process
+    COMP["comparison.py"]:::process
+    CACHE[("sharepoint_sites.json<br/>previous snapshot")]:::storage
 
     %% Pipeline Layer
-    PIPE[sharepoint_new_site_pipeline.py]:::process
-    GRAPH[GraphClient\n(sharepoint_items_json_with_date.py)]:::process
+    PIPE["sharepoint_new_site_pipeline.py"]:::process
+    GRAPH["GraphClient<br/>(sharepoint_items_json_with_date.py)"]:::process
     
     %% Document Classification
-    CLASS[Document Classification Engine]:::process
-    TRACKS[TRACKS mapping\n(hcm→HCM, scm→SCM, etc.)]:::storage
-    DOCPATHS[DOCUMENT_PATHS patterns\n(understudy/rtm→RTM, etc.)]:::storage
+    CLASS["Document Classification Engine"]:::process
+    TRACKS[("TRACKS mapping<br/>hcm to HCM, scm to SCM, etc.")]:::storage
+    DOCPATHS[("DOCUMENT_PATHS patterns<br/>understudy/rtm to RTM, etc.")]:::storage
 
     %% Output Generation
-    EXPORT[Export Site Data]:::process
-    STRUCT[structure.txt\n(folder tree)]:::output
-    JSON[<site_name>.json\n(document records)]:::output
+    EXPORT["Export Site Data"]:::process
+    STRUCT["structure.txt<br/>(folder tree)"]:::output
+    JSON["site_name.json<br/>(document records)"]:::output
 
     %% Neo4j Ingestion
-    MAIN[main.py\n(Orchestrator)]:::process
-    INGEST[ingest_to_neo4j.py]:::process
-    CYPHER[ingest_generated.cypher]:::output
+    MAIN["main.py<br/>(Orchestrator)"]:::process
+    INGEST["ingest_to_neo4j.py"]:::process
+    CYPHER["ingest_generated.cypher"]:::output
     
     %% Neo4j Database
     NEO4J[("Neo4j Knowledge Graph")]:::storage
     
     %% Graph Schema
-    SCHEMA[Neo4j Schema\n37 Document Types\n2 Tracks\n7 Projects]:::storage
+    SCHEMA["Neo4j Schema<br/>37 Doc Types / 2 Tracks / 7 Projects"]:::storage
 
     %% Flow
     SP --> LIST
@@ -68,26 +68,26 @@ flowchart TD
     MAIN --> INGEST
     INGEST --> CYPHER
     CYPHER --> NEO4J
-    SCHEMA --> NEO4J
+    SCHEMA -.-> NEO4J
 
     %% Subgraph for Neo4j Schema
-    subgraph NEO4J_SCHEMA [Neo4j Graph Structure]
-        COMPANY[Company: Orbrick]
-        TRACK_HCM[Track: HCM]
-        TRACK_SCM[Track: SCM]
-        PROJ_BOH[Project: Blue Ocean Health]
-        PROJ_EMI[Project: Emicool]
-        PROJ_HEN[Project: Hendrick Health]
-        PROJ_NI[Project: Network Intelligence]
-        PROJ_PM[Project: Plus Malaysia]
-        PROJ_TRP[Project: TRPGlobal]
-        PROJ_TAW[Project: Tawuniya-PWC]
-        DOC_RTM[Document:RTM]
-        DOC_SDD[Document:SDD]
-        DOC_RDD[Document:RDD]
-        DOC_UG[Document:USER_GUIDE]
-        DOC_DM[Document:DATA_MIGRATION]
-        DOC_OTHER[...32 more types]
+    subgraph NEO4J_SCHEMA ["Neo4j Graph Structure"]
+        COMPANY["Company: Orbrick"]
+        TRACK_HCM["Track: HCM"]
+        TRACK_SCM["Track: SCM"]
+        PROJ_BOH["Project: Blue Ocean Health"]
+        PROJ_EMI["Project: Emicool"]
+        PROJ_HEN["Project: Hendrick Health"]
+        PROJ_NI["Project: Network Intelligence"]
+        PROJ_PM["Project: Plus Malaysia"]
+        PROJ_TRP["Project: TRPGlobal"]
+        PROJ_TAW["Project: Tawuniya-PWC"]
+        DOC_RTM["Document:RTM"]
+        DOC_SDD["Document:SDD"]
+        DOC_RDD["Document:RDD"]
+        DOC_UG["Document:USER_GUIDE"]
+        DOC_DM["Document:DATA_MIGRATION"]
+        DOC_OTHER["...32 more types"]
     end
 
     COMPANY --> TRACK_HCM
